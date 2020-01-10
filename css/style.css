@@ -1,0 +1,205 @@
+/* Mobile first */
+
+/* CSS Général */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(../fonts/Comfortaa/static/Comfortaa-Light.ttf);
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif!important;
+    color:rgb(255, 255, 255, 0.2);
+    font-size:14px!important;
+}
+
+.display {
+    display:flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Colonne de gauche */
+
+.gauche {
+    background-color: #1c3039;
+    color: #ffffff;
+    list-style: none;
+    padding: 0;
+}
+
+#photoprofil {
+    width:100%;
+}
+
+.fa-user {
+    color: white;
+    background-color: #6faf57;
+    padding: 0.3em;
+    margin-right: 0.3em;
+}
+
+.gauche h2 {
+    padding: 0.1em 0;
+    background-color:#22525e;
+}
+
+#langues li img, #informatiques li img {
+    width:40px;
+    padding-right:0.5em;
+}
+
+.gauche li, li.competences {
+    padding:1em 0;
+}
+
+#hobbys {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left:0;
+}
+
+#hobbys li .fas {
+    font-size:2em;
+}
+
+#restau-coeur {
+    width:40px;
+}
+
+/* Colonne de droite */
+
+.droite {
+    color:#15353d;
+    padding: 1em!important;
+}
+
+.droite ul {
+    padding: 0 0.5em;
+}
+
+.fa-graduation-cap, .fa-briefcase, .fa-check-circle {
+    margin-right:0.5em;
+}
+
+.fa-graduation-cap, .diplomes {
+    color:#c21f24;
+}
+
+.fa-briefcase, .pros {
+    color:#45a754;
+}
+
+.fa-check-circle, .competences {
+    color:#5495a3;
+}
+
+.droite ul.column li::first-line {
+    font-weight:bold!important;
+}
+
+.fa-circle {
+    font-size: 0.7em;
+}
+
+/* Titres */
+
+h1 {
+    font-size:30px!important;
+    text-align: center;
+    font-weight: bold!important;
+    color:#246672;
+}
+
+h2 {
+    font-size:22px!important;
+}
+
+h3 {
+    font-size:15px!important;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif!important;
+    padding: 0.5em 0;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    body {
+        font-size:15px!important;
+    }
+
+    h1 {
+        font-size:32px!important;
+        text-align: center;
+        font-weight: bold!important;
+    }
+    
+    h2 {
+        font-size:24px!important;
+        text-align:start;
+    }
+    
+    h3 {
+        font-size:16px!important;
+    }
+
+    .droite {
+        color:#15353d;
+        padding: 2em!important;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+    
+    body {
+        font-size:16px!important;
+        text-align:center!important;
+    }
+
+    h1 {
+        font-size:40px!important;
+        text-align: center;
+        font-weight: bold!important;
+    }
+    
+    h2 {
+        font-size:26px!important;
+        text-align:center;
+    }
+    
+    h3 {
+        font-size:18px!important;
+    }
+
+    .display {
+        justify-content: center;
+    }
+
+    #langues, #informatiques {
+        text-align: start;
+        padding-left: 15em;
+    }
+}

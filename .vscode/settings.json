@@ -1,0 +1,13 @@
+{
+    "spellright.addToSystemDictionary": true,
+    "spellright.language": [
+        "fr"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html",
+        "css"
+    ]
+}
